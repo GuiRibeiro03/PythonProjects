@@ -4,18 +4,15 @@ from tkinter.ttk import *
 from time import strftime
 
 root = Tk()
-root.title("Clock")
+root.title('clock')
 
-def time():                                                     #Função que nos irá mostrar o tempo na label
-    string = strftime('%H:%M:%S  %p')
-    label.config(text=string)
-    label.after(1000, time)  #a cada segundo chama a função
+def time():
+    string=strftime('%I:%M:%S %p')
+    lbl.config(text = string)
+    lbl.after(1000, time)
 
-
-
-
-label = Label(root, font=("ds-digital", 80), background = "black", foreground = "red") #Visual da Label (janel onde nos apresentará as horas
-label.pack(anchor="center")
+lbl = Label(root, font=('calibri',40,'bold'), foreground = 'blue')
+lbl.pack(anchor = 'center')
 time()
 
 mainloop()

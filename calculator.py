@@ -1,50 +1,50 @@
-#GraphicCalculator
+
+#Função Adicionar
+def add():
+    num1=int(input("Insere um numero: \n"))
+    num2=int(input("Insere um segundo numero: \n"))
+    soma=num1+num2
+    print(soma)
+
+#Função Subtrair
+def sub():
+    num1 = int(input("Insere um numero: \n"))
+    num2 = int(input("Insere um segundo numero: \n"))
+    soma = num1 - num2
+    print(soma)
+
+#Função Dividir
+def div():
+    num1 = int(input("Insere um numero: \n"))
+    num2 = int(input("Insere um segundo numero: \n"))
+    soma = num1 / num2
+    print(soma)
+
+#Função Multiplicar
+def mult():
+    num1 = int(input("Insere um numero: \n"))
+    num2 = int(input("Insere um segundo numero: \n"))
+    soma = num1 * num2
+    print(soma)
 
 
-# This function adds two numbers
-def add(x, y):
-    return x + y
 
-# This function subtracts two numbers
-def subtract(x, y):
-    return x - y
 
-# This function multiplies two numbers
-def mult(x, y):
-    return x * y
+print("Bem-Vindo!\n")
+print("1-Adicionar\n")
+print("2-Subtrair\n")
+print("3-Dividir\n")
+print("4-Multiplicar\n")
+op=int(input("Escolhe uma operacao: \n"))
 
-# This function divides two numbers
-def devide(x, y):
-    return x / y
+if(op==1):
+    add()
+elif(op==2):
+    sub()
+elif(op==3):
+    div()
+elif(op==4):
+    mult()
 
-print("Select Operation")
-print("1-ADD")
-print("2-SUBTRACTION")
-print("3-MULTIPLY")
-print("4-DIVIDE")
-
-while True:
-    # Take input from the user
-    choice = input("Enter Choice(1/2/3/4): ")
-
-    # Check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
-        num1 = int(input("enter first number: "))
-        num2 = int(input("enter second number: "))
-
-    if(choice == '1'):
-        print(num1, "+", num2, "=", add(num1, num2))
-
-    elif (choice == '2'):
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
-    elif (choice == '3'):
-                print(num1, "*", num2, "=", mult(num1, num2))
-
-    elif (choice == '4'):
-        print(num1, "/", num2, "=", devide(num1, num2))
-    break
-else:
-    print("Invalid Input")
 
 
